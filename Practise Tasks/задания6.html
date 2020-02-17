@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+<script>
+    var taskList = {taskItem: [], time: []};
+var input = [];
+ 
+do {
+  var task = prompt('Добавить задание по шаблону "Содержимое" в "время"', '');
+  var c = confirm("Будете добавлять еще пункта?");
+  input.push(task);
+} while (c !== false);
+ 
+for(var i=0; i<input.length; i++){
+  var __ = input[i].split(" в ");
+  taskList.taskItem.push(__[0]);
+  taskList.time.push(__[1]);
+  console.log(taskList.taskItem[i] + ": " + taskList.time[i]);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="cart-items">
+        <div class="item">Milk 1 l.<span class="qty">x 2</span></div>
+        <div class="myDiv">Cola 1.5 l. <span class="qty">x 1</span></div>
+        <div class="item">Bread<span class="qty">x 2</span></div>
+        <div class="item">Cheese<span class="qty">x 1</span></div>
+        <div class="item">Chocolate bar<span class="childSpan">x 3</span></div>
+    </div>
+
+    <script>
+        var elem = document.getElementById("myDiv");
+        elem.parentNode.removeChild(elem);
+        var sp1 = document.createElement("span");
+        sp1.setAttribute("id", "newSpan");
+        sp1.appendChild(sp1_Canned Fish);
+        var sp2 = document.getElementById("childSpan");
+         var parentDiv = sp2.parentNode;
+         parentDiv.replaceChild(sp1, sp2);
+
+    </script>    
+</body>
+</html>

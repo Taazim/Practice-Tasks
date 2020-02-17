@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="element" id="myColor">Element 1</div>
+<div class="element" id="myColor" >Element 2</div>
+<div class="element"id="myColor">Element 3</div>
+<div class="element"id="myColor2">Element 4</div>
+<div class="element"id="myColor2">Element 5</div>
+<div class="element" id="myColor2">Element 6</div>
+
+<script>
+   onload=function(){
+var obj;
+obj=document.getElementById("myColor");
+obj.onmouseover=function(){this.value='size=3'; this.style.color='red'; };
+obj.onmouseout=function(){this.value='size=7'; this.style.color='blue'; };
+ }; 
+ onload=function(){
+var obj;
+obj=document.getElementById("myColor2");
+obj.onmouseover=function(){this.value='size=3'; this.style.color='green'; };
+obj.onmouseout=function(){this.value='size=7'; this.style.color='blue'; };
+ }; 
+</script>
+</body>
+</html>
